@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { Button, List, ListItem, Box } from "@mui/material";
-import ReactPaginate from "react-paginate";
 
 export default function Swatch() {
   const colors = [
@@ -46,11 +45,11 @@ export default function Swatch() {
     },
     {
       hex: "#121256",
-      color: "",
+      color: "Moop",
     },
   ];
   const [pageNumber, setPageNumber] = useState(0);
-  const [swatches, setSwatches] = useState(colors.slice(0, 10));
+  const [swatches] = useState(colors);
   const swatchesPerPage = 10;
   const pagesVisited = pageNumber * swatchesPerPage;
   const displaySwatches = swatches
