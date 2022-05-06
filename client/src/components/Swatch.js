@@ -54,7 +54,7 @@ export default function Swatch() {
   const pagesVisited = pageNumber * swatchesPerPage;
   const displaySwatches = swatches
     .slice(pagesVisited, pagesVisited + swatchesPerPage)
-    .map((color, index) => {
+    .map((color) => {
       return (
         <List key={color.hex}>
           <ListItem
@@ -82,7 +82,7 @@ export default function Swatch() {
       setPageNumber(pageNumber + 1);
     }
   };
-  const pageCount = Math.ceil(swatches.length / swatchesPerPage);
+
   return (
     <List key={displaySwatches.index}>
       <List className="ul">{displaySwatches}</List>
