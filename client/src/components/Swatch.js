@@ -81,12 +81,13 @@ export default function Swatch() {
   const next = () => {
     if (pageNumber >= colors.length) {
       setPageNumber(0);
-      //displaySwatches();
+      // return { displaySwatches };
     } else {
       setPageNumber(pageNumber + 1);
-      //displaySwatches();
+      // return { displaySwatches };
     }
   };
+  const pageCount = Math.ceil(swatches.length / swatchesPerPage);
   return (
     <List key={displaySwatches.index}>
       <List className="ul">{displaySwatches}</List>
