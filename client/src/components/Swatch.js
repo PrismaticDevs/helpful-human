@@ -71,30 +71,35 @@ export default function Swatch() {
   const prev = () => {
     if (pageNumber <= 0) {
       setPageNumber(colors.length);
-      //displaySwatches();
     } else {
       setPageNumber(pageNumber - 1);
-      //displaySwatches();
     }
   };
   const next = () => {
     if (pageNumber >= colors.length) {
       setPageNumber(0);
-      // return { displaySwatches };
     } else {
       setPageNumber(pageNumber + 1);
-      // return { displaySwatches };
     }
   };
   const pageCount = Math.ceil(swatches.length / swatchesPerPage);
   return (
     <List key={displaySwatches.index}>
       <List className="ul">{displaySwatches}</List>
-      <Box sx={{ display: "flex", justifyContent: "center" }}>{pageNumber}</Box>
       <Box sx={{ display: "flex", justifyContent: "center" }}>
         <Button onClick={prev} sx={{ m: 1 }} variant="contained">
           Prev
         </Button>
+        <Box
+          sx={{
+            display: "flex",
+            alignItems: "center",
+            ml: 3,
+            mr: 3,
+          }}
+        >
+          {pageNumber + 1}
+        </Box>
         <Button onClick={next} sx={{ m: 1 }} variant="contained">
           Next
         </Button>
