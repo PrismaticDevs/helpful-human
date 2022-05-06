@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Button, List, ListItem, Box } from "@mui/material";
-//import ReactPaginate from "react-paginate";
+import ReactPaginate from "react-paginate";
 
 export default function Swatch() {
   const colors = [
@@ -49,39 +49,48 @@ export default function Swatch() {
       color: "",
     },
   ];
-  let [pageNumber, setPageNumber] = useState(0);
-  const displaySwatches = colors.map((color, index) => {
-    return (
-      <List key={color.hex}>
-        <ListItem
-          style={{
-            background: color.hex,
-          }}
-        >
-          {color.hex}
-        </ListItem>
-        <Box sx={{ textAlign: "center" }}>{color.color}</Box>
-      </List>
-    );
-  });
+  const [pageNumber, setPageNumber] = useState(0);
+  const [swatches, setSwatches] = useState(colors.slice(0, 10));
+  const swatchesPerPage = 10;
+  const pagesVisited = pageNumber * swatchesPerPage;
+  const displaySwatches = swatches
+    .slice(pagesVisited, pagesVisited + swatchesPerPage)
+    .map((color, index) => {
+      return (
+        <List key={color.hex}>
+          <ListItem
+            style={{
+              background: color.hex,
+            }}
+          >
+            {color.hex}
+          </ListItem>
+          <Box sx={{ textAlign: "center" }}>{color.color}</Box>
+        </List>
+      );
+    });
   const prev = () => {
-    if (pageNumber < 0) {
+    if (pageNumber <= 0) {
       setPageNumber(colors.length);
+      //displaySwatches();
     } else {
       setPageNumber(pageNumber - 1);
+      //displaySwatches();
     }
   };
   const next = () => {
     if (pageNumber >= colors.length) {
       setPageNumber(0);
+      //displaySwatches();
     } else {
       setPageNumber(pageNumber + 1);
+      //displaySwatches();
     }
   };
   return (
     <List key={displaySwatches.index}>
       <List className="ul">{displaySwatches}</List>
-      {pageNumber}
+      <Box sx={{ display: "flex", justifyContent: "center" }}>{pageNumber}</Box>
       <Box sx={{ display: "flex", justifyContent: "center" }}>
         <Button onClick={prev} sx={{ m: 1 }} variant="contained">
           Prev
