@@ -4,9 +4,9 @@ const Swatches = ({ colors, loading }) => {
   if (loading) {
     return (
       <div className="d-flex justify-content-center">
-        <div className="spinner-border text-warning mr-3" role="status">
+        {/* <div className="spinner-border text-warning mr-3" role="status">
           <span className="sr-only">Loading...</span>
-        </div>
+        </div> */}
         <h2>Loading</h2>
         <div className="spinner-border text-info ml-3" role="status">
           <span className="sr-only">Loading...</span>
