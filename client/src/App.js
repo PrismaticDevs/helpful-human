@@ -39,6 +39,7 @@ const App = () => {
         totalPosts={swatches.length}
         paginate={paginate}
       />
+      <p className="text-center text-secondary">PrismaticDevs '22</p>
     </div>
   );
 };
