@@ -31,7 +31,7 @@ const App = () => {
   return (
     <div className="container mt-5">
       <h1 className="text-primary mb-3 d-flex justify-content-center">
-        Helpful Human Fullstack Demo
+        (つ◕౪◕)つ━☆ﾟ.*･｡ﾟ Helpful Human Fullstack Demo
       </h1>
       <Swatches colors={currentPosts} loading={loading} />
       <Pagination
