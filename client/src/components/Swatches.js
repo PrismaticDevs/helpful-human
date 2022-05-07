@@ -1,6 +1,6 @@
 import React from "react";
 
-const Posts = ({ posts, loading }) => {
+const Swatches = ({ colors, loading }) => {
   if (loading) {
     return (
       <div className="d-flex justify-content-center">
@@ -18,13 +18,13 @@ const Posts = ({ posts, loading }) => {
   return (
     <div className="container d-flex justify-content-center">
       <ul className="list-group mb-4 w-50">
-        {posts.map((post) => (
+        {colors.map((color) => (
           <li
             style={{ background: "rgb(56,234,43)" }}
-            key={post.id}
+            key={color.id}
             className="list-group-item text-white"
           >
-            {post.title}
+            {color.title}
           </li>
         ))}
       </ul>
@@ -32,4 +32,4 @@ const Posts = ({ posts, loading }) => {
   );
 };
 
-export default Posts;
+export default Swatches;

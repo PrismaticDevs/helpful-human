@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Posts from "./components/Posts";
+import Swatches from "./components/Swatches";
 import Pagination from "./components/Pagination";
 import axios from "axios";
 import "./App.css";
@@ -8,7 +8,7 @@ const App = () => {
   const [posts, setPosts] = useState([]);
   const [loading, setLoading] = useState(false);
   const [currentPage, setCurrentPage] = useState(1);
-  const [postsPerPage] = useState(10);
+  const [swatchesPerPage] = useState(10);
 
   useEffect(() => {
     const fetchPosts = async () => {
@@ -21,21 +21,24 @@ const App = () => {
   }, []);
 
   //Get current Posts
-  const indexOfLastPost = currentPage * postsPerPage;
-  const indexOfFirstPost = indexOfLastPost - postsPerPage;
-  const currentPosts = posts.slice(indexOfFirstPost, indexOfLastPost);
+  const indexOfLastSwatch = currentPage * swatchesPerPage;
+  const indexOfFirstSwatch = indexOfLastSwatch - swatchesPerPage;
+  const currentPosts = posts.slice(indexOfFirstSwatch, indexOfLastSwatch);
 
   // Change Page
   const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
   return (
     <div className="container mt-5">
-      <h1 className="text-primary mb-3 d-flex justify-content-center">
+      <h1
+        className="text-primary mb-3 d-flex justify-content-center
+      "
+      >
         Helpful Human Fullstack Demo
       </h1>
-      <Posts posts={currentPosts} loading={loading} />
+      <Swatches colors={currentPosts} loading={loading} />
       <Pagination
-        postsPerPage={postsPerPage}
+        postsPerPage={swatchesPerPage}
         totalPosts={posts.length}
         paginate={paginate}
       />
