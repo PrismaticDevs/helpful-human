@@ -19,7 +19,11 @@ const Posts = ({ posts, loading }) => {
     <div className="container d-flex justify-content-center">
       <ul className="list-group mb-4 w-50">
         {posts.map((post) => (
-          <li key={post.id} className="list-group-item">
+          <li
+            style={{ background: "rgb(56,234,43)" }}
+            key={post.id}
+            className="list-group-item text-white"
+          >
             {post.title}
           </li>
         ))}
