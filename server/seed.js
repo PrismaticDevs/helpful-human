@@ -15,8 +15,16 @@ mongoose
 
 const swatches = [
   {
-    hex: "",
-    color: "",
+    hex: "#3b5998",
+    color: "Facebook Blue",
+  },
+  {
+    hex: "#8b9dc3",
+    color: "Facebook Blue",
+  },
+  {
+    hex: "#dfe3ee",
+    color: "Facebook Blue",
   },
 ];
 
