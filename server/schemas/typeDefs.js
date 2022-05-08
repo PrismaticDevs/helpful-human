@@ -4,7 +4,6 @@ const typeDefs = gql`
     hex: String!
     color: String!
   }
-
   type Query {
     getAllSwatches: Swatch
   }

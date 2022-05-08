@@ -2,14 +2,15 @@ const { Swatch } = require("../models");
 
 const resolvers = {
   Query: {
-    getAllSwatches: async (parent, args, context) => {
-      Swatch.find({});
+    getAllSwatches: async () => {
+      const swatches = await Swatch.find({});
+      return swatches;
     },
   },
   Mutation: {
     addSwatch: async (parent, args) => {
-      const Swatch = await Swatch.create(args);
-      return { Swatch };
+      const swatch = await Swatch.create(args);
+      return swatch;
     },
   },
 };
