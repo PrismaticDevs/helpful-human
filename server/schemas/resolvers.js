@@ -4,6 +4,7 @@ const resolvers = {
   Query: {
     getAllSwatches: async () => {
       const swatches = await Swatch.find({});
+      console.log(swatches);
       return swatches;
     },
   },
