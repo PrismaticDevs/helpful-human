@@ -30,7 +30,9 @@ const swatches = [
 
 const seedDB = async () => {
   await Swatch.deleteMany({});
+  console.log("deleted");
   await Swatch.insertMany(swatches);
+  console.log("seeded");
 };
 
 seedDB().then(() => {
