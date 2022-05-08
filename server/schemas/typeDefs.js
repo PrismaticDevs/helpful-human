@@ -1,14 +1,8 @@
 const { gql } = require("apollo-server-express");
 const typeDefs = gql`
   type Swatch {
-    _id: ID!
-    email: String
-    firstName: String
-    lastName: String
-    isAdmin: Boolean
-    createdCourses: [Course]
-    enrolledCourseIds: [ID]
-    enrolledCourses: [Course]
+    hex: String!
+    color: String!
   }
 
   type Query {

@@ -8,3 +8,7 @@ const swatchSchema = new Schema({
     type: String,
   },
 });
+
+const Swatch = model("Swatch", swatchSchema);
+
+module.exports = Swatch;
