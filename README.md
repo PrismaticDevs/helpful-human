@@ -25,7 +25,7 @@ I interviewed with the company on 5/4, began building the application on 5/5, an
 
 ## Usage
 
-Browse th app to view color swatches. There are 100 color swatches so the swatches are paginated to display 20 at a time. The swatches are grouped by into reds, yellows, greens, blues, and purples. Use the button to generate a random color swatch.
+Browse the app to view color swatches. There are 100 color swatches so the swatches are paginated to display 20 at a time. The swatches are grouped by into reds, yellows, greens, blues, and purples. Use the button to generate a random color swatch.
 
 ## Goals
 
