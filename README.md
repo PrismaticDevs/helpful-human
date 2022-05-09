@@ -35,7 +35,7 @@ Browse the app to view color swatches. There are 100 color swatches so the swatc
     <li>The app is styled using Bootstrap.</li>
     <li>The app includes a magical donger.</li>
     <li>The database contains 100 colors.</li>
-    <li>The colors are oaginated to show 20 at a time and are grouped by color.</li>
+    <li>The colors are paginated to show 20 at a time and are grouped by color.</li>
     <li>The swatch color label is displayed along with the color itself.</li>
     <li>A button can be pressed to generate a random color.</li>
 </ul>
