@@ -31,7 +31,7 @@ Browse the app to view color swatches. There are 100 color swatches so the swatc
 
 <ul>
     <h3>Core</h3>
-    <li>The app is styled with the required Google font in the App.css for the body.</li>
+    <li>The app is styled with the required Google font in the App.css for the body of the SPA.</li>
     <li>The app is styled using Bootstrap.</li>
     <li>The app includes a magical donger.</li>
     <li>The database contains 100 colors.</li>
