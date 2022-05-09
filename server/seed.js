@@ -338,6 +338,87 @@ const swatches = [
     hex: "#82EEFD",
     color: "Arctic",
   },
+  // Purple
+  {
+    hex: "#A32CC4",
+    color: "Purple",
+  },
+  {
+    hex: "#7A4988",
+    color: "Mauve",
+  },
+  {
+    hex: "#710193",
+    color: "Violet",
+  },
+  {
+    hex: "#630436",
+    color: "Boysenberry",
+  },
+  {
+    hex: "#E39FF6",
+    color: "Lavender",
+  },
+  {
+    hex: "#601A35",
+    color: "Plum",
+  },
+  {
+    hex: "#A1045A",
+    color: "Magenta",
+  },
+  {
+    hex: "#B65FCF",
+    color: "Lilac",
+  },
+  {
+    hex: "#663046",
+    color: "Grape",
+  },
+  {
+    hex: "#BE93D4",
+    color: "Periwinkle",
+  },
+  {
+    hex: "#4D0F28",
+    color: "Sangria",
+  },
+  {
+    hex: "#311432",
+    color: "Eggplant",
+  },
+  {
+    hex: "#67032F",
+    color: "Jam",
+  },
+  {
+    hex: "#9867C5",
+    color: "Iris",
+  },
+  {
+    hex: "#9E7BB5",
+    color: "Heather",
+  },
+  {
+    hex: "#A45EE5",
+    color: "Amethyst",
+  },
+  {
+    hex: "#290916",
+    color: "Raisin",
+  },
+  {
+    hex: "#AF69EF",
+    color: "Orchid",
+  },
+  {
+    hex: "#4C0121",
+    color: "Mulberry",
+  },
+  {
+    hex: "#2C041C",
+    color: "Wine",
+  },
 ];
 
 const seedDB = async () => {
