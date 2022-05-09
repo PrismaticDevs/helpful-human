@@ -26,3 +26,5 @@ const Swatches = ({ colors, loading }) => {
 };
 
 export default Swatches;
+
+// onClick={() => {navigator.clipboard.writeText(this.state.textToCopy)}}
