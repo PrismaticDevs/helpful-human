@@ -46,10 +46,6 @@ Browse the app to view color swatches. There are 100 color swatches so the swatc
     <li>The app is mobile optimized by using Bootstrap.</li>
     <li>The colors are seeded into the MongoDB using a seed.js file and a "node seed.js." script</li>
 </ul>
-<ul>
-    <h3>Bonus</h3>
-    <li>The data is fetched from MongoDB using GraphQL.</li>
-</ul>
 
 ## Technology
 

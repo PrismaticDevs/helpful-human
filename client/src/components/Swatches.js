@@ -11,14 +11,23 @@ const Swatches = ({ colors, loading }) => {
   ) : (
     <div className="container d-flex justify-content-center">
       <ul className="list-group mb-4 w-50">
-        {colors.map((color) => (
-          <li
-            style={{ background: "rgb(56,234,43)", cursor: "pointer" }}
-            key={color.id}
-            className="list-group-item text-white"
-          >
-            {color.title}
-          </li>
+        {colors.map((color, index) => (
+          <div key={index}>
+            <h6 key={color.hex} style={{ margin: 0 }}>
+              {color.hex}
+            </h6>
+            <li
+              style={{
+                background: color.hex,
+                listStyleType: "none",
+                marginBottom: ".5em",
+              }}
+              key={color.color}
+              className="list-group-item text-white"
+            >
+              {color.color}
+            </li>
+          </div>
         ))}
       </ul>
     </div>
@@ -26,5 +35,3 @@ const Swatches = ({ colors, loading }) => {
 };
 
 export default Swatches;
-
-// onClick={() => {navigator.clipboard.writeText(this.state.textToCopy)}}
