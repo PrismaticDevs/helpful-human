@@ -13,7 +13,7 @@ const Swatches = ({ colors, loading }) => {
       <ul className="list-group mb-4 w-50">
         {colors.map((color) => (
           <li
-            style={{ background: "rgb(56,234,43)" }}
+            style={{ background: "rgb(56,234,43)", cursor: "pointer" }}
             key={color.id}
             className="list-group-item text-white"
           >
