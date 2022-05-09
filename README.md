@@ -7,6 +7,7 @@
 - [Deployed Application](#url)
 - [Usage](#usage)
 - [Goals](#goals)
+- [Technology](#technology)
 - [Questions](#questions)
 
 ## License
@@ -48,6 +49,15 @@ Browse the app to view color swatches. There are 100 color swatches so the swatc
 <ul>
     <h3>Bonus</h3>
     <li>The data is fetched from MongoDB using GraphQL.</li>
+</ul>
+
+## Technology
+
+<ul>
+    <li>React.js</li>
+    <li>Bootstrap CSS</li>
+    <li>MongoDB</li>
+    <li>GraphQL</li>
 </ul>
 
 ## Questions?
